@@ -3,19 +3,21 @@ package com.giordan.hrworker.resources;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.giordan.hrworker.repositories.WorkerRepository;
+
+import lombok.RequiredArgsConstructor;
+
 import com.giordan.hrworker.entities.Worker;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.http.ResponseEntity;
 import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
 
 @RestController
 @RequestMapping(value = "/workers")
+@RequiredArgsConstructor
 public class WorkerResource {
     
-    @Autowired
-    private WorkerRepository repository;
+    private final WorkerRepository repository;
 
     @GetMapping
     public ResponseEntity<List<Worker>> findAll() {
