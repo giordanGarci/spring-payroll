@@ -42,7 +42,7 @@ O sistema é composto por diversos microsserviços que interagem entre si para f
 
 Certifique-se de ter as seguintes ferramentas configuradas:
 
-- **Java 11** (JDK configurado com `JAVA_HOME` e `PATH`)
+- **Java 17** (JDK configurado com `JAVA_HOME` e `PATH`)
 - **Spring Tool Suite (STS)** ou outra IDE compatível.
 - **Docker Desktop**
 - Conhecimento básico de Spring Boot.
